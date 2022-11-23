@@ -1,0 +1,108 @@
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <script src="https://kit.fontawesome.com/0e22389e8c.js" crossorigin="anonymous"></script>
+    <script src="formulaire.js" defer></script>
+    <title>Formulaire</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+    </nav>
+    <div class="image">
+        <img class="slides"   alt="" src= "imgs/pexels-photo-12810262.jpeg">
+        <img class="slides"   alt="" src="imgs/pexels-kindel-media-8566525.jpg" >
+        <img class="slides"   alt="" src="imgs/pexels-cottonbro-studio-4722544.jpg" >
+        <img class="slides"   alt="" src= "imgs/new.jpeg">
+        <img class="slides"   alt="" src="imgs/pexels-pixabay-270789.jpg" >
+        <img class="slides"   alt="" src="imgs/pexels-syed-hasan-mehdi-839428.jpg" >
+        <img class="slides"   alt="" src="imgs/pexels-photo-12902873.webp">
+    </div>
+    <main>
+        <div class="container">
+            <div class="header">
+                <h2>Formulaire d'inscription aux Clubs Parascolaires</h2>
+            </div>
+            <form action="confirmation.html" id="form" class="form">
+                <div class="form-control">
+                    <label for="firstname">First Name</label>
+                    <input type="text" placeholder="first_name" id="firstname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" placeholder="last_name" id="lastname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <label for="username">Email</label>
+                    <input type="email" placeholder="last_name.first_name@ofppt.ma" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <label for="username">Phone Number</label>
+                    <input type="text" placeholder="Phone number" id="phonenumber" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                    <samp></samp>
+                </div>
+                <div class="form-control">
+                    <p><b>Genre:</b></p>
+                    <div class="Genre">
+                    <div class="F">
+                        <label for="Féminin">  <input type="radio" id="F" name="M" value="F">Féminin</label>
+                     
+                        <label for="Masculin"> <input type="radio" id="M" name="M" value="M">Masculin</label>
+                       
+                        <label for="Masculin"><input type="radio" id="M" name="M" value="O">Other</label>
+                        
+                    
+                    <div class="mis1"></div>
+                </div>
+                <div class="form-control">
+                    <label for="groups">Groups</label>
+                    <div class="group">
+                        <label><input id="agree" name="origin" type="radio" value="google"> DW101</label>
+                        <label><input id="agree" name="origin" type="radio" value="google"> DW102</label>
+                        <label><input id="agree" name="origin" type="radio" value="google"> DW103</label>
+                        <label><input id="agree" name="origin" type="radio" value="google"> DM101</label>
+                        <label><input id="agree" name="origin" type="radio" value="google"> DM101</label>
+                        <small>Error message</small>
+                        <samp></samp>
+                        <div class="mis2"></div>
+                    </div>
+                   
+                </div>
+                <div class="form-control">
+                    <label for="clubs">Clubs</label>
+                    <div class="clubs">
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Informatique</label>
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Robotique</label>
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Jeu d'échecs</label>
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Musique</label>
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Foot</label>
+                        <label><input id="club" name="origin" type="checkbox" value="Clubs"> Théatre</label>
+                    </div>
+                    <div id="confirm"></div>
+                </div>
+                <button  class="btn" type="submit" value="submit" onclick="validate()" >Submit</button>
+            </form> 
+        </div>
+    </main>
+</body>
+</html>
