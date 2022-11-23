@@ -12,6 +12,7 @@ let arr =[];
 form.addEventListener("submit", (e) => {
   checkInputs();
   if(arr.length != 7) e.preventDefault();
+
 });
 function validatefname(fname) {
   if (fname.value.trim() === "") {
